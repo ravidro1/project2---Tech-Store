@@ -14,24 +14,6 @@ body {
 
 }
 
-#logo-headline {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-    /* justify-content: start;
-    align-items: flex-end; */
-}
-
-#logo-headline img {
-    /* width: 8vw;
-    height: 8vw; */
-
-    width: 10%;
-    height: auto;
-}
 
 #upper-hero {
     width: auto;
@@ -51,6 +33,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12vw;
     margin: 0px;
+    text-shadow: 1vw 1vw 0.7vw black;
 }
 
 
@@ -107,15 +90,20 @@ body {
     border: 0.2vw solid black;
     display: flex;
     justify-content: space-between;
+    border-radius: 1vw;
 
-    /* -webkit-text-stroke: 0.05vw green; */
+}
 
+.product-window:hover{
+    box-shadow: 1.5vw 1.5vw 1vw black;
 }
 
 
 .product-image {
     width: 10vw;
     height: 10vw;
+    border-radius: 1vw;
+
 }
 
 .p-text {
@@ -131,7 +119,10 @@ body {
 a {
     width: 9.9vw;
     height: 9.6vw;
+    border-radius: 1vw;
+
 }
+
 
 .button {
     display: flex;
@@ -155,8 +146,14 @@ a {
     color: white;
 
     border: 0.2vw solid brown;
+    border-radius: 1vw;
 
 }
+
+.product-window:hover .button{
+    color: crimson;
+}
+
 
 .productPage-links{
     /* color: white; */
@@ -175,6 +172,48 @@ a {
 }
 
 
+
+#partner-section{
+    background-image: url("src/hero/background.jpg");
+    background-size: cover;
+
+    width: 100vw;
+    height: auto;
+
+    font-size: 1.2vw;
+
+
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 4vw;
+}
+
+#partner-logo {
+    width: 100vw;
+    height: auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    /* justify-content: start;
+    align-items: flex-end; */
+    padding-bottom: 3vw;
+}
+
+#partner-logo img {
+    /* width: 8vw;
+    height: 8vw; */
+
+    width: 20vw;
+    height: auto;
+
+    margin-left: 4vw ;
+    /* margin-bottom: 7vw; */
+    margin-top: 7vw;
+    margin-bottom: 3vw;
+}
 
 
 
@@ -239,6 +278,8 @@ a {
     margin-bottom: 3%;  */
     margin: 0;
 }
+
+
 
 @media screen and (max-width: 768px) {
     #logo-headline {
